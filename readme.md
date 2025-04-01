@@ -194,6 +194,10 @@ _You can always clear database by uncommenting line in_
    ```sh
    docker compose up --build
    ```
+   or get existing app version:
+   ```sh
+   docker compose -f docker-compose2.yaml up
+   ```
 3. The API will be available at: `http://localhost:8000`
 
 ### **Without Docker**
