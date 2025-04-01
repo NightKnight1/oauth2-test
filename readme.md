@@ -60,6 +60,16 @@
 
 ### **Content Management**
 
+
+_You can always clear database by uncommenting line in_
+  ```python
+    @asynccontextmanager
+    async def lifespan(app: FastAPI):
+    # drop_db()
+    init_db()
+    yield
+  ```
+
 #### **Add Content**
 
 `POST /contents/add`
