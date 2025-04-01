@@ -1,0 +1,17 @@
+#version: '3.8'
+name: OAUTH2-TEST
+
+services:
+  app:
+    image: goldentiger/oauth2-test-app
+    ports:
+      - "8000:8000"
+    environment:
+      - REDIS_HOST=redis
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
