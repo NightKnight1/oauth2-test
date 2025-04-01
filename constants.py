@@ -1,0 +1,15 @@
+DB_NAME = 'Database.db'
+USERS_TABLE_NAME = 'users'
+CONTENTS_TABLE_NAME = 'contents'
+
+APP_HOST = 'localhost'
+APP_PORT = 8000
+
+#REDIS_HOST = 'localhost'
+REDIS_HOST = 'redis'
+REDIS_PORT = 6379
+
+JWT_TOKEN_TTL_SECONDS = 20
+JWT_TOKEN_BLACKLIST_TTL_SECONDS = 20
+JWT_SECRET_KEY = "my-256-bit-secret"
+JWT_ALGORITHM = "HS256"
